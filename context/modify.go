@@ -565,7 +565,7 @@ func (ctx *Context) Check() []*Conflict {
 	return ret
 }
 
-// ResolveApply applies the conflict resolution selected. It chooses the
+// ResloveApply: applies the conflict resolution selected. It chooses the
 // Operation listed in the OpIndex field.
 func (ctx *Context) ResloveApply(cc []*Conflict) {
 	for _, c := range cc {

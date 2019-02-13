@@ -82,7 +82,7 @@ func (g *GopathTest) In(pkg string) {
 	g.current = p
 }
 
-// Get path from package import path pkg.
+// Path gets path from package import path pkg.
 func (g *GopathTest) Path(pkg string) string {
 	return filepath.Join(g.base, "src", pkg)
 }

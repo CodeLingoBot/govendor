@@ -26,7 +26,7 @@ func (err ErrNoSuchSystem) Error() string {
 // From is the current vendor schema.
 type From string
 
-// Migrate from the given system using the current working directory.
+// MigrateWD: Migrate from the given system using the current working directory.
 func MigrateWD(from From) error {
 	wd, err := os.Getwd()
 	if err != nil {
